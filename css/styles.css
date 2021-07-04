@@ -4,7 +4,7 @@ a{
 }
 
 .car-description{
-  height: 300px;
+  height: 100px;
 }
 .content-col{
   padding:50px;
@@ -31,6 +31,7 @@ a{
   background-color: #e38826;
   background-color: hsl(31, 77%, 52%);
   border-radius: 10px 10px 0 0;
+  /* height: 500px; */
   /* width: 350px; */
   /* border-radius: 10px 0 0 10px; */
 }
@@ -62,7 +63,7 @@ a{
 
 /* @media (max-width:768px) {
   .sedan-car{
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0
   }
   .luxury-car{
     border-radius: 0 0 10px 10px;
@@ -74,18 +75,22 @@ a{
   margin: 20px auto;
   /* justify-content: center; */
   width: 75%;
-
+  /* height: 100px; */
 }
 .row{
   justify-content: center;
 }
 
 h1{
-  font-family: 'Big Shoulders Display', cursive;
+  /* font-family: 'Big Shoulders Display', cursive; */
+  font-family: 'Lexend Deca', sans-serif;
+  margin-top: 30px;
+  color: white;
 }
 
 p{
   font-family: 'Lexend Deca', sans-serif;
+  color: white;
 }
 
 .btn-container{
