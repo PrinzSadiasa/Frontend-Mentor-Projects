@@ -1,16 +1,18 @@
-.main-container{
-  display:flex;
-  margin-top: 100px;
-  justify-content: center;
+
+a{
+  text-decoration: none;
 }
 
+.car-description{
+  height: 300px;
+}
 .content-col{
   padding:50px;
   /*
   Note:
   1. flex-basis is used to specify the width when using "flex containers"
   */
-  flex-basis: 12%;
+  /*flex-basis: 20%;*/
 }
 
 .content-col p{
@@ -28,18 +30,54 @@
   */
   background-color: #e38826;
   background-color: hsl(31, 77%, 52%);
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px 10px 0 0;
+  /* width: 350px; */
+  /* border-radius: 10px 0 0 10px; */
 }
 
 .suv-car{
   background-color: #006970;
-  background-color: hsl(184, 100%, 22%)
+  background-color: hsl(184, 100%, 22%);
+  /* width: 350px; */
 }
 
 .luxury-car{
   background-color: #004241;
   background-color: hsl(179, 100%, 13%);
-  border-radius: 0 10px 10px 0; 
+  border-radius: 0 0 10px 10px;
+  /* width: 350px; */
+  /* border-radius: 0 10px 10px 0; */
+}
+
+/* for tablet devices or bigger */
+@media (min-width:768px) {
+  .sedan-car{
+    border-radius: 10px 0 0 10px;
+  }
+  .luxury-car{
+    border-radius: 0 10px 10px 0;
+  }
+
+}
+
+/* @media (max-width:768px) {
+  .sedan-car{
+    border-radius: 10px 10px 0 0;
+  }
+  .luxury-car{
+    border-radius: 0 0 10px 10px;
+  }
+} */
+
+.main-container{
+  /*display:flex;*/
+  margin: 20px auto;
+  /* justify-content: center; */
+  width: 75%;
+
+}
+.row{
+  justify-content: center;
 }
 
 h1{
@@ -50,7 +88,14 @@ p{
   font-family: 'Lexend Deca', sans-serif;
 }
 
+.btn-container{
+    width: 145px;
+    /* margin: 0 auto; */
+}
 .btn-sedan {
+  /* -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; */
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -60,10 +105,15 @@ p{
   background: #ffffff;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
-
+  display: block;
+  /* The width property below is transferred to .btn-container to avoid the warning "Using width with padding can sometimes make elements larger than you expect." */
+  /* width: 145px; */
 }
 
 .btn-suv {
+  /* -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; */
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -73,9 +123,15 @@ p{
   background: #ffffff;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  display: block;
+  /* The width property below is transferred to .btn-container to avoid the warning "Using width with padding can sometimes make elements larger than you expect." */
+  /* width: 145px; */
 }
 
 .btn-luxury {
+  /* -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; */
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
@@ -85,9 +141,11 @@ p{
   background: #ffffff;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  display: block;
+  /* The width property below is transferred to .btn-container to avoid the warning "Using width with padding can sometimes make elements larger than you expect." */
+  /* width: 145px; */
 }
 
 .btn-sedan:hover,  .btn-suv:hover, .btn-luxury:hover{
-  background: #ffff0a;
   text-decoration: none;
 }

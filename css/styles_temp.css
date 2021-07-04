@@ -1,0 +1,19 @@
+@media (max-width:500px){
+  body{background-color:blue;}
+
+}
+
+.col-style{
+  background-color: green;
+  border: 1px solid;
+
+}
+.grid_container{
+  width: 70%;
+  margin: 100px auto;
+}
+
+img{
+  min-width: 100%;
+  margin: 100px 200px;
+}
